@@ -95,7 +95,7 @@ A clean, modular structure designed for easy scaling:
 ## 🎥 Full Setup Tutorial Video
 Agar aapko deploy ya setup karne mein koi bhi problem aa rahi hai, toh aap **Dev Kaushal Tech** par is bot ka complete step-by-step setup video dekh sakte hain:
 
-👉 **[Watch Full Setup Video Here](https://youtu.be/YOUR_VIDEO_LINK_HERE)** *(Note: Replace `YOUR_VIDEO_LINK_HERE` with your actual YouTube video link)*
+👉 **[Watch Full Setup Video Here](https://youtu.be/WgZVdiFhPhc?si=GaVsi0mLrzqvBcNR)** 
 
 ---
 
