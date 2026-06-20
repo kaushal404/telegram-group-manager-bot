@@ -57,3 +57,11 @@ You need to set the following environment variables to run the bot:
 ```bash
    git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
    cd your-repo-name
+
+---
+
+## ❤️ Support & Updates
+
+Agar aapko ye bot pasand aaya aur aap aise hi awesome coding tutorials aur projects dekhna chahte hain, toh mere YouTube channel ko zaroor subscribe karein!
+
+[![Subscribe to Dev Kaushal Tech](https://img.shields.io/badge/YouTube-Subscribe_Now-red?style=for-the-badge&logo=youtube&logoColor=white)](https://youtube.com/@devkaushaltech?si=gtNgvGMjwgHyBwXY)
