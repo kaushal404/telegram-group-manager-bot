@@ -1,26 +1,59 @@
-Render Dashboard Settings
-Jab aapka GitHub update ho jaye, toh Render ki website par jakar ye settings karni hain:
+# 🛡️ Telegram Group Management Bot
 
-Render par "New Web Service" banayein.
+A powerful, modular, and asynchronous Telegram Group Management Bot built using **Pyrogram (v2)** and **MongoDB**. 
+It includes features like moderation, anti-spam, customizable welcome messages, and an advanced warning system.
 
-Apne GitHub account se connect karke apna repository select karein.
+---
 
-Build Command me likhein:
+## ✨ Features
+* **Moderation:** `/ban`, `/mute`, `/warn`, `/kick` commands with admin permission checks.
+* **Warning System:** Auto-ban/mute after a configurable warning limit.
+* **Welcome & Leave:** Customizable welcome messages and anti-bot entry checks.
+* **Anti-Spam:** Link protection and basic word filters.
+* **Database:** MongoDB integration for fast and reliable data storage.
+* **Production Ready:** Includes a dummy web server for easy deployment on free cloud platforms like Render.
 
-pip install -r requirements.txt
+---
 
-4. **Start Command** me likhein:
-   ```bash
-python __main__.py
-Environment Variables (Yeh bohot zaruri hai):
-Aapko wahan Environment tab me jaana hai aur apni keys add karni hain:
+## 📋 Prerequisites
+Before you begin, you will need:
+1. **Telegram API Keys:** Get `API_ID` and `API_HASH` from [my.telegram.org](https://my.telegram.org).
+2. **Bot Token:** Get it from [@BotFather](https://t.me/BotFather) on Telegram.
+3. **MongoDB URI:** Get a free database cluster from [MongoDB Atlas](https://www.mongodb.com/cloud/atlas).
 
-Key: API_ID | Value: (aapka api id)
+---
 
-Key: API_HASH | Value: (aapka api hash)
+## ⚙️ Environment Variables
+You need to set the following environment variables to run the bot:
 
-Key: BOT_TOKEN | Value: (aapka bot token)
+| Variable | Description | Requirement |
+| :--- | :--- | :--- |
+| `API_ID` | Your Telegram API ID | **Required** |
+| `API_HASH` | Your Telegram API Hash | **Required** |
+| `BOT_TOKEN` | Bot Token from BotFather | **Required** |
+| `MONGO_URI` | Your MongoDB Connection String | **Required** |
+| `OWNER_ID` | Your Telegram User ID (for sudo access) | Optional/Recommended |
 
-Key: MONGO_URI | Value: (aapka MongoDB link)
+---
 
-Ek Bonus Tip: Render ka free plan 15 minute baad inactive ho jata hai. Isko 24/7 online rakhne ke liye aap apna Render ka link (e.g., [https://your-bot-name.onrender.com](https://your-bot-name.onrender.com)) cron-job.org par daal sakte hain. Wo har 10 minute me aapke link ko ping karega jisse bot kabhi off nahi hoga.
+## 🚀 Deployment Guide
+
+### Option 1: Deploy on Render (Free & Recommended)
+1. Fork this repository or upload the files to your own GitHub account.
+2. Go to [Render](https://render.com) and sign in.
+3. Click on **New +** and select **Web Service**.
+4. Connect your GitHub account and select this repository.
+5. Setup the service with the following details:
+   * **Build Command:** `pip install -r requirements.txt`
+   * **Start Command:** `python __main__.py`
+6. Scroll down to **Environment Variables** and add all the required keys mentioned in the table above.
+7. Click **Create Web Service**. 
+8. *(Optional but Important)*: To keep the bot running 24/7 on Render's free tier, copy your Render web service URL (e.g., `https://your-app.onrender.com`) and set up a free 5-minute ping on [cron-job.org](https://cron-job.org).
+
+---
+
+### Option 2: Local Setup (For PC/VPS)
+1. Clone the repository:
+```bash
+   git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
+   cd your-repo-name
