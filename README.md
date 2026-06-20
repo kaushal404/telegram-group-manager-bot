@@ -61,3 +61,45 @@ Want to run it locally on your own machine? Follow these steps:
    ```bash
    git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
    cd your-repo-name
+
+
+
+2. Install the required dependencies:
+      ```bash
+      pip install -r requirements.txt
+      ```
+
+   3. Open `config.py` and replace the placeholder values with your actual API keys and MongoDB URI. (Alternatively, you can export them to your OS environment).
+
+   4. Start the bot:
+      ```bash
+      python __main__.py
+      ```
+
+---
+
+## 📂 Project Structure
+A clean, modular structure designed for easy scaling:
+* `__main__.py` : Main entry point and web server for cloud deployment.
+* `config.py` : Configuration file for API keys.
+* `database/` : MongoDB connection and database handlers.
+* `plugins/` : Modular bot commands and handlers (admin, welcome, antispam).
+
+---
+
+## 💡 Important Notes
+* Ensure your bot is granted **Administrator** rights in the Telegram groups where it is added. Without admin rights, moderation commands like `/ban` and `/mute` will fail.
+
+---
+
+## 🎥 Full Setup Tutorial Video
+Agar aapko deploy ya setup karne mein koi bhi problem aa rahi hai, toh aap **Dev Kaushal Tech** par is bot ka complete step-by-step setup video dekh sakte hain:
+
+👉 **[Watch Full Setup Video Here](https://youtu.be/YOUR_VIDEO_LINK_HERE)** *(Note: Replace `YOUR_VIDEO_LINK_HERE` with your actual YouTube video link)*
+
+---
+
+## ❤️ Support & Updates
+Agar aapko yeh bot pasand aaya aur aap aise hi awesome coding tutorials, bot developments, aur tech projects dekhna chahte hain, toh **Dev Kaushal Tech** YouTube channel ko zaroor subscribe karein!
+
+[![Subscribe to Dev Kaushal Tech](https://img.shields.io/badge/YouTube-Subscribe_Now-red?style=for-the-badge&logo=youtube&logoColor=white)](https://youtube.com/@devkaushaltech?si=gtNgvGMjwgHyBwXY)
